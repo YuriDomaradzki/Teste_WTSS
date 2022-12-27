@@ -16,7 +16,6 @@ class WTSS_Harmonize:
     def __init__(self, token):
         WTSS_Harmonize._service = WTSS('https://brazildatacube.dpi.inpe.br/', access_token=token)
 
-        
     @classmethod
     def _get_coverage(cls):
         return cls._coverage
@@ -169,7 +168,7 @@ class WTSS_Harmonize:
 
 
 if __name__ == "__main__":
-    service = WTSS_Harmonize('rjsfSKwjhLTVhDqE2BaMD065jwNlHsUBNR9gZqh7cB')
+    service = WTSS_Harmonize(token='change_me')
 
     start=datetime.now()
     x, y = 10, 10
